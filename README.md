@@ -1,0 +1,1 @@
+# V-cut-Kitle-ndeksi-Hesab--C-programlama
