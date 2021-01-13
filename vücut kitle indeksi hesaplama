@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+int main ()
+{
+  float vucut_kitle, kg, boy; //Sonuç virgüllü çıkabileceği için değişken tipini float olarak yazdık.
+  printf ("Vücut Kitle İndeksi Hesabı\n");
+  printf ("vücut ağırlığını gir(kg): ");
+  scanf ("%f", &kg);
+  printf ("boy uzunluğunu giriniz(m): "); //boy uzunluğunu metre cinsinden almamız gerekiyor. (örn:1.63 gibi)
+  scanf ("%f", &boy);
+  vucut_kitle = kg / (boy * boy); // VKİ hesaplama işlemini yaptık.
+  printf ("vücut kitle indeksi: %.2f\n", vucut_kitle);
+  printf ("Durumunuz: "); 
+  //vücut kitle indeksimizi öğrendikten sonra belirli aralıklarda olan kilo durumumuzu belirlemiş olduk.
+  if (vucut_kitle > 0 && vucut_kitle <= 18.5)
+    {
+      printf ("düşük kilolusunuz");
+    }
+  else if (vucut_kitle > 18.5 && vucut_kitle <= 24.9)
+    {
+      printf ("normal kilolusunuz");
+    }
+  else if (vucut_kitle >= 25 && vucut_kitle <= 29.9)
+    {
+      printf ("fazla kilolusunuz");
+    }
+  else if (vucut_kitle >= 30 && vucut_kitle <= 40)
+    {
+      printf ("obezsiniz");
+    }
+  else
+    {
+      printf ("aşırı obezsiniz");
+    }
+  return 0;
+}
