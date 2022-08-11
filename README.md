@@ -1,1 +1,1 @@
-# C-programlama-ornekleri
+# C Programlama Örnekleri
